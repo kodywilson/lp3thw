@@ -8,5 +8,9 @@ print("Here are the months:", months)
 print("""
 There's something going on here with the three double qoutes.
 
-We can type anything we want.
+We can type anything we want. It even saves my
+
+
+blank lines and such.
+
 """)
