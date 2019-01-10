@@ -40,5 +40,7 @@ while playAgain == 'yes' or playAgain == 'y':
   checkCave(caveNumber)
 
   print('Do you want to play again? (yes or no)')
-  playAgain = input()
+  playAgain = input().lower()
   
+print()
+print('Thanks for playing!')
