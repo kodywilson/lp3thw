@@ -1,8 +1,10 @@
-from sys import argv
-script, first, second, third, fourth = argv
+import sys
+print(str(sys.argv))
 
-print("The script is called:", script)
-print("Your first variable is:", first)
-print("Your second variable is:", second)
-print("Your third variable is:", third)
-print("Your fourth variable is:", fourth)
+y = 0
+for x in sys.argv:
+  if y < 1:
+    print("The script is called:", x)
+  else:
+    print("Argument number " + str(y) + " is " + x)
+  y = y + 1
