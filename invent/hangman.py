@@ -64,3 +64,38 @@ def getRandomWord(wordList):
 
   wordIndex = random.randint(0, len(wordList) -1)
   return wordList[wordIndex]
+
+def displayBoard(HANGMANPICS, missedLetters, correctLetters, secretWord):
+  print(HANGMANPICS[len(missedLetters)])
+  print()
+
+  print('Missed letters:', end=' ')
+  for letter in missedLetters:
+    print(letter, end=' ')
+    print()
+
+    blanks = '_' * len(secretWord)
+
+    for i in range(len(secretWord)): # replace blanks with correctly guessed letters
+      if secretWord[i] in correctLetters:
+        blanks = blanks[:i] + secretWord[i] + blanks[i+1:]
+
+    for letter in blanks: # show the secret word with spaces in between each letter
+      print(letter, end=' ')
+    print()
+
+def getGuess(alreadyGuessed):
+  # Returns the letter the player entered. This function makes sure the player entered a single letter, and not something else.
+  while True:
+    print('Guess a letter.')
+    guess = input()
+    guess = guess.lower()
+    if len(guess) != 1:
+      print('Please enter a single letter.')
+    elif guess in alreadyGuessed:
+      print('You have already guessed that letter. Choose again.')
+    elif guess not in 'abcdefghijklmnopqrstuvwxyz':
+      print('Please enter a LETTER.')
+    else:
+      return guess
+
