@@ -72,17 +72,17 @@ def displayBoard(HANGMANPICS, missedLetters, correctLetters, secretWord):
   print('Missed letters:', end=' ')
   for letter in missedLetters:
     print(letter, end=' ')
-    print()
+  print()
 
-    blanks = '_' * len(secretWord)
+  blanks = '_' * len(secretWord)
 
-    for i in range(len(secretWord)): # replace blanks with correctly guessed letters
-      if secretWord[i] in correctLetters:
-        blanks = blanks[:i] + secretWord[i] + blanks[i+1:]
+  for i in range(len(secretWord)): # replace blanks with correctly guessed letters
+    if secretWord[i] in correctLetters:
+      blanks = blanks[:i] + secretWord[i] + blanks[i+1:]
 
-    for letter in blanks: # show the secret word with spaces in between each letter
-      print(letter, end=' ')
-    print()
+  for letter in blanks: # show the secret word with spaces in between each letter
+    print(letter, end=' ')
+  print()
 
 def getGuess(alreadyGuessed):
   # Returns the letter the player entered. This function makes sure the player entered a single letter, and not something else.
