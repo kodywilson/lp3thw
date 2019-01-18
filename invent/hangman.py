@@ -82,6 +82,7 @@ def displayBoard(HANGMANPICS, missedLetters, correctLetters, secretWord):
 
   for letter in blanks: # show the secret word with spaces in between each letter
     print(letter, end=' ')
+  
   print()
 
 def getGuess(alreadyGuessed):
@@ -104,6 +105,7 @@ def playAgain():
   print('Do you want to play again? (yes or no)')
   return input().lower().startswith('y')
 
+print()
 print('H A N G M A N')
 missedLetters = ''
 correctLetters = ''
