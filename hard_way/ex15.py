@@ -6,3 +6,4 @@ filename = sys.argv[1]
 txt = open(filename)
 
 print(f"Here's your file {filename}:")
+print(txt.read())
