@@ -19,3 +19,4 @@ target.write(line1 + "\n" + line2 + "\n" + line3)
 
 print("And finally, we close it.")
 target.close()
+print("Open the file and see what's in there.")
