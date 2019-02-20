@@ -13,3 +13,5 @@ def print_none():
 
 print_two("Kody", "Wilson")
 print_two_again("Kody", "Wilson")
+print_one("First!")
+print_none()
