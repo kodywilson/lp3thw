@@ -4,6 +4,10 @@ def cheese_and_crackers(cheese_count, boxes_of_crackers):
   print("Man, that's enough for a party!")
   print("Get a blanket.\n")
 
+def calculate_area(x, y):
+  area = x * y
+  print(f"Given lengths of {x} and {y}, the total area is {area}.")
+
 print("We can just give the function numbers directly:")
 cheese_and_crackers(20, 30)
 
@@ -18,3 +22,6 @@ cheese_and_crackers(10 + 20, 5 + 6)
 
 print("And we can combine the two, variables and math:")
 cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
+
+print("We can do other neat things like calculate area.")
+calculate_area(100, 200)
