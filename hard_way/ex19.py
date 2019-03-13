@@ -29,3 +29,6 @@ cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
 
 print("We can do other neat things like calculate area.")
 calculate_area(100, 200)
+
+print("We can do other neat things like calculate volume.")
+calculate_volume(10, 20, 10)
