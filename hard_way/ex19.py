@@ -8,6 +8,10 @@ def calculate_area(x, y):
   area = x * y
   print(f"Given lengths of {x} and {y}, the total area is {area}.")
 
+def calculate_volume(x, y, z):
+  volume = x * y * z
+  print(f"Given lengths of {x}, {y}, and {z}, the volume is {volume}.")
+
 print("We can just give the function numbers directly:")
 cheese_and_crackers(20, 30)
 
@@ -25,3 +29,6 @@ cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
 
 print("We can do other neat things like calculate area.")
 calculate_area(100, 200)
+
+print("We can do other neat things like calculate volume.")
+calculate_volume(10, 20, 10)
