@@ -14,6 +14,10 @@ def divide(a, b):
   print(f"Dividing {a} / {b}")
   return a / b
 
+def sumthin(a, b, c):
+  print(f"Adding {a} + {b} + {c}")
+  return a + b + c
+
 print("Let's do some math with just functions!")
 
 age = add(30, 5)
@@ -28,3 +32,6 @@ print("Here is a puzzle.")
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
 print("That becomes: ", what, "Can you do it by hand?")
+
+mosum = sumthin(100, 100, 100)
+print("Which equals ", mosum)
