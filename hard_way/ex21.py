@@ -18,6 +18,10 @@ def sumthin(a, b, c):
   print(f"Adding {a} + {b} + {c}")
   return a + b + c
 
+def pie(r):
+  print(f"Given a radius of {r}")
+  return 3.14 * r * r
+
 print("Let's do some math with just functions!")
 
 age = add(30, 5)
@@ -35,3 +39,6 @@ print("That becomes: ", what, "Can you do it by hand?")
 
 mosum = sumthin(100, 100, 100)
 print("Which equals ", mosum)
+
+circle_area = pie(10)
+print("The area is ", circle_area)
